@@ -16,12 +16,12 @@
 
 body {
 background-color: #020001;
-background-image: url(blue-background-nature-5.jpg);
+/* background-image: url(blue-background-nature-5.jpg); */
 background-repeat: no-repeat;
 background-size: auto;
 background-position: center;
 font-weight:normal;
-color: black;
+color: gray;
 letter-spacing:1pt;
 word-spacing:2pt;
 font-size:18px;
