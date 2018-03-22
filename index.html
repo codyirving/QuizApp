@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vex-js/4.1.0/js/vex.combined.min.js" integrity="sha256-qObWTmBVvSj8Kh/R02uSsIcrO5B2Bow7/taqyDFHqXc=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vex-js/4.1.0/css/vex.css" integrity="sha256-/eaLySG/rPCowjMWyStmTPGtaU79NKiqodgU2X/PJ/g=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vex-js/4.1.0/css/vex-theme-os.css" integrity="sha256-UmUajlAwWHI+dgAKG5ptMD1Sp9J3dT0rk81lid9QWkU=" crossorigin="anonymous" />
+  <script>vex.defaultOptions.className = 'vex-theme-os'</script>
+  
+</head>
+<body>
+    <div class="question-tracker-container row">
+        <div class="col-6">
+        <div class="question-tracker current-question">Current Question: 
+          <div class="question-number-current">0/10</div>
+        </div>
+        </div>
+        
+        <div class="col-6">
+        <div class="question-tracker current-performance">
+          <div class="question-performance-current">
+            Correct: 0 <br>
+            Incorrect: 0
+          </div>
+        </div>
+        </div>
+      </div>
+      
+
+
+<header role="banner"><h1>Super Questions</h1></header>
+
+<div class="welcome">
+  <h1>Welcome to SUPER QUESTIONS!</h1>
+  <button class='submit-button' id="continue-button" type="button">START THE QUIZ!</button>
+</div>
+
+<div class="container">
+  <div class="question">What is your name?</div>
+  <form action="/">
+    <div class="row"> 
+      <label>
+        <div class="answer-box" id="answer-1" >
+          <input type="radio" name="answers" class="answers" id="answer-one" checked>
+          <div class='answer'></div>
+        </div>
+      </label>
+    </div>
+    <div class="row">  
+      <label>
+        <div class="answer-box" id="answer-2">
+          <input type="radio" name="answers" class="answers" id="answer-two" >
+          <div class='answer'></div>
+        </div>
+      </label>
+    </div>
+    <div class="row"> 
+      <label>
+        <div class="answer-box" id="answer-3">
+          <input type="radio" name="answers" class="answers" id="answer-three" >
+          <div class='answer'></div>
+        </div>
+      </label>
+    </div>
+    <div class="row">  
+      <label>
+        <div class="answer-box" id="answer-4">
+          <input type="radio" name="answers" class="answers" id="answer-four" >
+          <div class='answer'></div>
+        </div>
+      </label>
+    </div>
+    <button class="submit-button" id="answer-button" type="submit">SUBMIT ANSWER</button>
+  </form>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

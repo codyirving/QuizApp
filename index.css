@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Color Pallette */
+
+:root {
+--dark: rgba(129, 132, 134, .5);
+--mediumdark: rgba(227, 225, 221, .5);
+--medium: rgba(239, 238, 234, .4);
+--mediumlight: rgba(123, 200, 214, 1);
+--mediumlighttrans: rgba(123, 200, 214, .5);
+--light: rgba(239, 211, 134, .5);
+--overgray: rgba(92,71, 56, 0.2);
+}
+
+body {
+background-color: #020001;
+background-image: url(blue-background-nature-5.jpg);
+background-repeat: no-repeat;
+background-size: auto;
+background-position: center;
+font-weight:normal;
+color: black;
+letter-spacing:1pt;
+word-spacing:2pt;
+font-size:18px;
+text-align:left;
+font-family:Optima, sans-serif;
+line-height:1;
+margin:0px;
+padding:0px;
+}
+header {
+text-align: center;
+margin-top: 270px;
+}
+@media only screen and (min-width: 640px) {
+header {
+  text-align: center;
+  margin-top: 170px;
+}
+}
+.welcome {
+margin: auto;
+text-align: center;
+}
+.container {
+max-width: 80%;
+margin: auto;
+display: none;
+}
+.question {
+text-align: center;
+font-size: 40px;
+font-weight: 700;
+margin-bottom: 20px;
+}
+form {
+display: block;
+margin:auto;
+}
+fieldset {
+border: none;
+}
+.answer-box {
+border: 1px solid gray;
+margin-bottom: 20px;
+background-color: var(--overgray);
+text-align: center;
+font-size: 50px;
+}
+.answer-box > input {
+display: block;
+position: absolute;
+margin: 20px;
+}
+.answer {
+display:block;
+margin: 0 20px 0 40px;
+}
+.submit-button {
+display: block;
+margin: 20px auto;
+font-size: 30px;
+text-align: center;
+background-color: var(--mediumlighttrans);
+color: white;
+padding: 20px 40px;
+}
+.question-tracker-container {
+text-align: center;
+background-color: var(--mediumlight);  
+max-width: 100% !important;
+width: 100%;
+padding: 20px;
+position: fixed;
+left: 0;
+top: 0;
+width: 100%;
+z-index: 10;
+}
+.question-tracker {
+border: 1px solid white;
+padding: 10px;
+color:black;
+}
+
+/*********************/
+/* START GRID SYSTEM */
+/*********************/
+
+.row {
+max-width: 1000px;
+padding-left: 20px;
+padding-right: 20px;
+margin: 0 auto;
+}
+/* Clearfix */
+.row::before,
+.row::after {
+display: table;
+content: '';
+}
+.row::after {
+clear: both;
+}
+.col-3, .col-4, .col-6, .col-12 {
+float: left;
+/* Gutters:
+ * Each column is padded by half-a-gutter on each side,
+ *
+ * Half a gutter is 10px, 10/960 (context) = 1.041666%
+ *
+ */
+padding-left: 1.04166666%;
+padding-right: 1.04166666%;
+}
+/* Mobile defaults */
+.col-3, .col-4, .col-6, .col-12 {
+width: 100%;
+}
+/* Non-mobile, grid */
+@media only screen and (min-width: 640px) {
+/* 3 columns, 3/12 in % */
+.col-3 {
+  width: 25%;
+}
+/* 4 columns */
+.col-4 {
+    width: 33.33%;
+}
+/* 6 columns */
+.col-6 {
+    width: 50%;
+}
+/* 12 columns */
+.col-12 {
+    width: 100%;
+}
+}
+/*******************/
+/* END GRID SYSTEM */
+/*******************/
